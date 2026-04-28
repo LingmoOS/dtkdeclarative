@@ -5,6 +5,7 @@ Maintainer: Shanshan Ye <yeshanshan@uniontech.com>
 Build-Depends:
  debhelper-compat (= 12),
  cmake,
+ gpg | gpg-from-sq,
  pkg-kde-tools,
  libgtest-dev,
  libdtkcommon-dev,
