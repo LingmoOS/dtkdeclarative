@@ -267,8 +267,8 @@
     \list
         \li \l{DTK::fontManager}{DTK.fontManager()}
         \li \l{DTK::makeShadowImageUrl()}{DTK.makeShadowImageUrl()}
-        \li \l{DTK::deepinWebsiteName}{DTK.deepinWebsiteName()}
-        \li \l{DTK::deepinWebsiteLink}{DTK.deepinWebsiteLink()}
+        \li \l{DTK::lingmoSystemName}{DTK.lingmoSystemName()}
+        \li \l{DTK::lingmoSystemWebLink}{DTK.lingmoSystemWebLink()}
         \li \l{DTK::deepinDistributionOrgLogo}{DTK.deepinDistributionOrgLogo()}
         \li \l{DTK::cursorPosition}{DTK.cursorPosition()}
         \li \l{DTK::setPopupMode()}{DTK.setPopupMode()}
@@ -390,11 +390,11 @@
 
 @return 当 LightType 时返回 \a light , 当 DarkType 时返回 \a dark 。
 
-@property string DTK::deepinWebsiteName
+@property string DTK::lingmoSystemName
 @note 此属性为只读属性
 @brief deepin 网站名称。
 
-@property string DTK::deepinWebsiteLink
+@property string DTK::lingmoSystemWebLink
 @note 此属性为只读属性
 @brief deepin 网站链接。
 

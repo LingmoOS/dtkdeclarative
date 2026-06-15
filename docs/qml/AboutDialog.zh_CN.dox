@@ -18,8 +18,8 @@
         productName: qsTr("dde-control-center")
         productIcon: "action_setting"
         companyLogo: "file://" + DTK.deepinDistributionOrgLogo
-        websiteName: DTK.deepinWebsiteName
-        websiteLink: DTK.deepinWebsiteLink
+        websiteName: DTK.lingmoSystemName
+        websiteLink: DTK.lingmoSystemWebLink
     }
 ```
 
@@ -48,10 +48,10 @@
 
 @property string AboutDialog::websiteName
 @brief websiteName 属性用于控制 AboutDialog 的公司网站名称.
-@details 通常情况下，只需要使用 DTK.deepinWebsiteName 即可自动根据系统版本信息，选择合适的网站。。
+@details 通常情况下，只需要使用 DTK.lingmoSystemName 即可自动根据系统版本信息，选择合适的网站。。
 
 @property string AboutDialog::websiteLink
 @brief websiteLink 属性用于控制 AboutDialog 的应用程序网站链接。
-@details 使用 DTK.deepinWebsiteLink 即可自动获取网站链接
+@details 使用 DTK.lingmoSystemWebLink 即可自动获取网站链接
 
 */

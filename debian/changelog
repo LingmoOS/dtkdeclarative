@@ -1,3 +1,20 @@
+dtkdeclarative (6.7.40.lingmo.1) unstable; urgency=medium
+
+  * Release 6.7.40.lingmo.1
+  * rename deepinWebsiteName to lingmoSystemName
+  * rename deepinWebsiteLink to lingmoSystemWebLink
+  * rename deepinDistributionOrgLogo to lingmoDefaultLogo
+  * update branding references in private headers, QML examples, tests, and documentation
+  * change the default logo resource path to :/assets/images/logo.svg
+
+ --  Lingmo OS Team <team@lingmo.org>  Tue, 16 Jun 2026 00:52:00 +0800
+
+dtkdeclarative (6.7.38) unstable; urgency=medium
+
+  * Release 6.7.38
+
+ --  yeshanshan <yeshanshan@uniontech.com>  Tue, 31 Mar 2026 11:02:55 +0800
+
 dtkdeclarative (6.7.38) unstable; urgency=medium
 
   * Release 6.7.38

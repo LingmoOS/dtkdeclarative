@@ -177,10 +177,10 @@ void DQMLGlobalObjectPrivate::_q_onPaletteChanged()
 void DQMLGlobalObjectPrivate::ensureWebsiteInfo()
 {
     DCORE_USE_NAMESPACE;
-    if (deepinWebsiteName.isEmpty() || deepinWebsiteLink.isEmpty()) {
+    if (lingmoSystemName.isEmpty() || lingmoSystemWebLink.isEmpty()) {
         const auto &deepinWebsiteInfo = DSysInfo::distributionOrgWebsite(DSysInfo::Distribution);
-        deepinWebsiteName = deepinWebsiteInfo.first;
-        deepinWebsiteLink = deepinWebsiteInfo.second;
+        lingmoSystemName = deepinWebsiteInfo.first;
+        lingmoSystemWebLink = deepinWebsiteInfo.second;
     }
 }
 
@@ -330,35 +330,35 @@ QColor DQMLGlobalObject::selectColor(const QColor &windowColor, const QColor &li
     }
 }
 
-QString DQMLGlobalObject::deepinWebsiteName() const
+QString DQMLGlobalObject::lingmoSystemName() const
 {
     D_DC(DQMLGlobalObject);
 
     const_cast<DQMLGlobalObjectPrivate*>(d)->ensureWebsiteInfo();
 
-    return d->deepinWebsiteName;
+    return d->lingmoSystemName;
 }
 
-QString DQMLGlobalObject::deepinWebsiteLink() const
+QString DQMLGlobalObject::lingmoSystemWebLink() const
 {
     D_DC(DQMLGlobalObject);
 
     const_cast<DQMLGlobalObjectPrivate*>(d)->ensureWebsiteInfo();
 
-    return d->deepinWebsiteLink;
+    return d->lingmoSystemWebLink;
 }
 
-QString DQMLGlobalObject::deepinDistributionOrgLogo() const
+QString DQMLGlobalObject::lingmoDefaultLogo() const
 {
     DCORE_USE_NAMESPACE;
 
     D_DC(DQMLGlobalObject);
-    if (d->deepinDistributionOrgLogo.isEmpty()) {
-        const auto &logo = DSysInfo::distributionOrgLogo(DSysInfo::Distribution, DSysInfo::Light, ":/assets/images/deepin-logo.svg");
-        const_cast<DQMLGlobalObjectPrivate*>(d)->deepinDistributionOrgLogo = logo;
+    if (d->lingmoDefaultLogo.isEmpty()) {
+        const auto &logo = DSysInfo::distributionOrgLogo(DSysInfo::Distribution, DSysInfo::Light, ":/assets/images/logo.svg");
+        const_cast<DQMLGlobalObjectPrivate*>(d)->lingmoDefaultLogo = logo;
 
     }
-    return d->deepinDistributionOrgLogo;
+    return d->lingmoDefaultLogo;
 
 }
 

@@ -139,13 +139,13 @@ TEST_F(ut_DQMLGlobalObject, makeColor)
 
 TEST_F(ut_DQMLGlobalObject, deepinWebsite)
 {
-    ASSERT_TRUE(!pObj->deepinWebsiteName().isEmpty());
-    ASSERT_TRUE(!pObj->deepinWebsiteLink().isEmpty());
+    ASSERT_TRUE(!pObj->lingmoSystemName().isEmpty());
+    ASSERT_TRUE(!pObj->lingmoSystemWebLink().isEmpty());
 }
 
-TEST_F(ut_DQMLGlobalObject, deepinDistributionOrgLogo)
+TEST_F(ut_DQMLGlobalObject, lingmoDefaultLogo)
 {
-    ASSERT_TRUE(!pObj->deepinDistributionOrgLogo().isEmpty());
+    ASSERT_TRUE(!pObj->lingmoDefaultLogo().isEmpty());
 }
 
 TEST_F(ut_DQMLGlobalObject, blendColor)

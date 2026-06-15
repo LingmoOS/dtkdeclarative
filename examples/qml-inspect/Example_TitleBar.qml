@@ -44,9 +44,9 @@ TitleBar {
         productIcon: "music"
         modality: Qt.NonModal
         productName: qsTr(appProductName)
-        companyLogo: "file://" + DTK.deepinDistributionOrgLogo
-        websiteName: DTK.deepinWebsiteName
-        websiteLink: DTK.deepinWebsiteLink
+        companyLogo: "file://" + DTK.lingmoDefaultLogo
+        websiteName: DTK.lingmoSystemName
+        websiteLink: DTK.lingmoSystemWebLink
         description: "qml inspect is used to developer as a debug tool."
         license: appLicense === "" ? "" : qsTr(String("%1 is released under %2").arg(appProductName).arg(appLicense))
     }

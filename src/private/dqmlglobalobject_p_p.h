@@ -32,9 +32,9 @@ public:
     QQuickPalette *quickPalette = nullptr;
     QQuickPalette *inactiveQuickPalette = nullptr;
 #endif
-    QString deepinWebsiteName;
-    QString deepinWebsiteLink;
-    QString deepinDistributionOrgLogo;
+    QString lingmoSystemName;
+    QString lingmoSystemWebLink;
+    QString lingmoDefaultLogo;
 
 private:
     D_DECLARE_PUBLIC(DQMLGlobalObject)

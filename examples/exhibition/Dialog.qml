@@ -360,7 +360,7 @@ Column {
                             id: companyLogoLabel
                             Layout.alignment: Qt.AlignHCenter
                             Layout.topMargin: 0
-                            source: "file://" + DTK.deepinDistributionOrgLogo
+                            source: "file://" + DTK.lingmoDefaultLogo
                         }
                         Label {
                             Layout.leftMargin: 10

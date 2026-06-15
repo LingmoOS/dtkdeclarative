@@ -133,9 +133,9 @@ class DQMLGlobalObject : public QObject, public DTK_CORE_NAMESPACE::DObject
     Q_PROPERTY(QQuickPalette* palette READ quickPalette NOTIFY paletteChanged)
     Q_PROPERTY(QQuickPalette* inactivePalette READ inactiveQuickPalette NOTIFY inactivePaletteChanged)
 #endif
-    Q_PROPERTY(QString deepinDistributionOrgLogo READ deepinDistributionOrgLogo CONSTANT)
-    Q_PROPERTY(QString deepinWebsiteName READ deepinWebsiteName CONSTANT)
-    Q_PROPERTY(QString deepinWebsiteLink READ deepinWebsiteLink CONSTANT)
+    Q_PROPERTY(QString lingmoDefaultLogo READ lingmoDefaultLogo CONSTANT)
+    Q_PROPERTY(QString lingmoSystemName READ lingmoSystemName CONSTANT)
+    Q_PROPERTY(QString lingmoSystemWebLink READ lingmoSystemWebLink CONSTANT)
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     QML_NAMED_ELEMENT(DTK)
     QML_SINGLETON
@@ -222,9 +222,9 @@ public:
     Q_INVOKABLE DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType toColorType(const QColor &color);
     Q_INVOKABLE QColor selectColor(const QColor &windowColor, const QColor &light, const QColor &dark);
 
-    QString deepinWebsiteName() const;
-    QString deepinWebsiteLink() const;
-    QString deepinDistributionOrgLogo() const;
+    QString lingmoSystemName() const;
+    QString lingmoSystemWebLink() const;
+    QString lingmoDefaultLogo() const;
 
     Q_INVOKABLE QPoint cursorPosition() const;
 

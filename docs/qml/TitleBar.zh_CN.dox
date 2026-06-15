@@ -158,9 +158,9 @@
                 modality: Qt.NonModal
                 version: qsTr(String("Version: %1").arg(Qt.application.version))
                 productName: qsTr(appProductName)
-                companyLogo: "file://" + DTK.deepinDistributionOrgLogo
-                websiteName: DTK.deepinWebsiteName
-                websiteLink: DTK.deepinWebsiteLink
+                companyLogo: "file://" + DTK.lingmoDefaultLogo
+                websiteName: DTK.lingmoSystemName
+                websiteLink: DTK.lingmoSystemWebLink
                 license: appLicense === "" ? "" : qsTr(String("%1 is released under %2").arg(appProductName).arg(appLicense))
             }
         }
