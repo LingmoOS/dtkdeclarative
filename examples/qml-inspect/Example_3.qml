@@ -9,7 +9,7 @@ Item {
     Image {
         id: back
         anchors.fill: parent
-        source: "file:///usr/share/wallpapers/deepin/desktop.jpg"
+        source: "file:///usr/share/wallpapers/lingmo/default.jpg"
     }
 
     Rectangle {
